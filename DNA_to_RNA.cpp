@@ -1,3 +1,7 @@
+/*
+This program takes a DNA string and returns its transcribed RNA string thorugh the function transcribe_DNA, that exchanges the Ts for Us. The time complexity is O(n).
+/*
+	
 #include <iostream>
 #include<string>
 using namespace std;
