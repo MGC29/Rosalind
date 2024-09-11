@@ -1,8 +1,14 @@
+/*
+This program imputs a FASTA file (function read_FASTA), calculates it's GC content (function GC_content), meaning the percentage of nucleotides that are G or C and returns the id of the sequence with the highest GC_content as well as this percentage (function max_GC). 
+
+*/
+
 #include <iostream>
 #include<string>
 #include <iomanip>
 #include <vector>
 using namespace std;
+
 
 void read_FASTA(vector<string>& DNA, vector<string>& id){
 	string line, seq_id, seq_DNA;

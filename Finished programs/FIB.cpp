@@ -36,11 +36,3 @@ long long int number_rabbits_2(int n, int k){
 	cin >> n >> k; 
 	cout << number_rabbits_2(n, k) << endl;
 }
-
-
-
-
-/*
-
-}
-*/

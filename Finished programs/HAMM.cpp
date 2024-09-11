@@ -1,3 +1,7 @@
+/*
+This program takes two strings of the same length, iterates through them and counts the number of point mutations, meaning that for a given position they have different nucleotides. 
+*/
+
 #include <iostream>
 #include<string>
 using namespace std;

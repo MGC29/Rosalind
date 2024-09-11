@@ -1,3 +1,8 @@
+/*
+This program finds the longest consecutive common sequence amongst a number of DNA strings. 
+it first reads a Fasta file and stores the different sequences in a vector. Then it iterates through all the possible substrings of the first sequence and checks if said substring is common amongst all the othr DNA sequences. If it is, it is then stored in a variable. If the substring is shorter than the variable, the it is not checked, as we want the longest substring. This is a sub-optimal solution.  
+*/
+
 #include <iostream>
 #include <fstream>
 #include <string>
