@@ -4,7 +4,6 @@ It returns the "expected number of offspring displaying the dominant phenotype i
 */
 
 #include <iostream>
-
 using namespace std;
 
 double calculate_offspring(int x, int i){
