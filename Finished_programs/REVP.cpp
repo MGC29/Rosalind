@@ -1,5 +1,7 @@
 /*
-
+This program takes a DNA string and returns the position and lenght of every reverse palindrome,
+meaning a sequence that is equal to its reverse complement, that has a lenght between 4 and 12 
+nucleotides. 
 */
 
 #include <iostream>
@@ -42,7 +44,7 @@ void complement(string &DNA, string &reverse){
 
 void palindrome(string &seq, string &reverse_seq){
 	for(int i = 0; i <= seq.size() - 4;  i++){
-		for(int j = i + 3; j <= i + 11; j++){
+		for(int j = i + 3; j <= i + 12; j++){
 			if(j > seq.size()) break; 
 			string original_seq = seq.substr(i, j - i) ; 
 			string palindrome_seq = reverse_seq.substr(i, j - i); 
@@ -54,10 +56,8 @@ void palindrome(string &seq, string &reverse_seq){
 	}
 }
 
-
-
 int main(){
-	string seq; 
+	string seq;
 	read_FASTA(seq);
 	string rev_seq(seq.size(), ' '); 
 	complement(seq, rev_seq); 
